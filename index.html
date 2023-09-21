@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISH</title>
+    <!-- style portion -->
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        .body {
+            box-sizing: border-box;
+            border-radius: 10px;
+            width: 40%;
+            padding: 2%;
+            background-color: lightblue;
+            margin: auto;
+        }
+
+        .submit_button {
+            border: 0;
+            width: 25%;
+            border-radius: 5px;
+        }
+
+        input {
+            border: 0;
+            border-radius: 5px;
+            width: 60%;
+            height: 24px
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="body">
+        <h2>WELCOME</h2>
+        <form action="process.php" method="post">
+            <label for="name">NAME</label> <br>
+            <input type="text" name="name" placeholder="  name" required><br>
+            <br>
+            <label for="email">E-MAIL</label> <br>
+            <input type="email" name="email" placeholder="  e-mail" inputmode="email" required><br>
+            <br>
+            <label for="address">ADDRESS</label> <br>
+            <input type="address" name="address" placeholder="  address" required><br>
+            <br>
+            <input class="submit_button" type="submit" value="SUBMIT">  
+        </form>
+    </div>
+</body>
+</html>
